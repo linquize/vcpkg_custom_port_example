@@ -1,0 +1,5 @@
+{
+  "name": "sshtest",
+  "version-string": "0.0.1",
+  "dependencies": [ "libexample1", "libexample2" ]
+}
