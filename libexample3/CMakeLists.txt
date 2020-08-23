@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(libexample3 CXX)
+add_library(libexample3 INTERFACE)
+set_target_properties(libexample3 PROPERTIES PUBLIC_HEADER example3.h)
+install(TARGETS libexample3 PUBLIC_HEADER DESTINATION include/example3)

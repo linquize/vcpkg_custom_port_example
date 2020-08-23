@@ -1,0 +1,8 @@
+{
+  "name": "libexample3",
+  "version-string": "0.0.1",
+  "description": [
+    "example3 library",
+    "Example3 is an open-source C++ library"
+  ]
+}

@@ -31,4 +31,12 @@ else()
 	target_link_libraries(main PRIVATE ${EXAMPLE2_LIBRARY})
 endif()
 
+find_package(libexample3 CONFIG)
+if(libexample3_FOUND)
+	target_link_libraries(main PRIVATE libexample3)
+else()
+	find_path(EXAMPLE3_INCLUDE_DIR example3/example3.h)
+	target_include_directories(main PRIVATE ${EXAMPLE3_INCLUDE_DIR})
+endif()
+
 install(TARGETS main)

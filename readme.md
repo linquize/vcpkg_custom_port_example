@@ -11,11 +11,11 @@ System Requirement: MSVC 2019.6
 - Windows 10 SDK
 - C++ CMake tools for Windows
 
-1. Copy `libexample1` and `libexample2` to `vcpkg/ports`.
+1. Copy `libexample1`, `libexample2` and `libexample3` to `vcpkg/ports`.
 2. Open in Visual Studio 2019.
 3. It will run CMake configure.
 4. It will build `vcpkg.exe` if not yet.
-5. It will build `libexample1` and `libexample2` if out-of-date.
+5. It will build `libexample1`, `libexample2` and `libexample3` if out-of-date.
 6. Then build the project.
 
 
@@ -47,6 +47,7 @@ Then use cmake to build
 ```bash
 cp -pr libexample1 vcpkg/ports/
 cp -pr libexample2 vcpkg/ports/
+cp -pr libexample3 vcpkg/ports/
 cmake -S . -B out/build -G Ninja
 cmake --build out/build
 ```
